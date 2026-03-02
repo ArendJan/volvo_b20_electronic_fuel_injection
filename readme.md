@@ -4,3 +4,8 @@ My attempt at ditching my broken carburetor and replacing it with a electronic f
 
 I'll try to document what I've tried, which components and tools I've used and share my drawings for others to build on to.
 
+- [ECU](./ecu/readme.md)
+- [Crank angle sensor](./sensors/cas/readme.md)
+
+
+- [Ordered parts](./ordered_parts.md)
