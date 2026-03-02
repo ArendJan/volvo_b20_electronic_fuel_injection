@@ -1,0 +1,31 @@
+name: Detect EXIF Data
+
+on:
+  push:
+
+jobs:
+  detect-exif:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      
+      - name: Install exiftool
+        run: sudo apt-get install -y exiftool
+      
+      - name: Scan for EXIF data in images
+        run: |
+          EXIT_CODE=0
+          for file in $(find . -type f \( -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.png" -o -iname "*.gif" -o -iname "*.tiff" \) ! -path "./.git/*"); do
+            if exiftool "$file" | grep -q .; then
+              echo "ERROR: EXIF data found in $file"
+              exiftool "$file"
+              EXIT_CODE=1
+            fi
+          done
+          
+          if [ $EXIT_CODE -eq 1 ]; then
+            echo "❌ Workflow failed: Image files contain EXIF data"
+            exit 1
+          else
+            echo "✅ No EXIF data found in image files"
+          fi
