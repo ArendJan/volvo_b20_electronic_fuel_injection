@@ -101,3 +101,20 @@ First attempt I mixed up a measurement and it was incorrect, but bolt pattern wa
 I also flipped the sensor to not have the cable hanging on the ground.
 
 You can see and edit it on [Onshape](https://cad.onshape.com/documents/014ff45bea66aa0bcdc0c0be/w/65de59ecee7c677c08520d6a/e/b62775a8e7906aeec321b7e0?renderMode=0&uiState=69a605904ff991894ba91dd2).
+
+After ordering the parts from the neighbour:
+
+![Mounted trigger wheel](images/triggerwheel_front.jpg)
+![Mounted trigger wheel](images/triggerwheel_mounted.jpg)
+
+
+# Cam angle sensor
+
+
+For this I used a basic hall sensor, drilled a hole into the original distributor and glued it in.
+
+The sensor is a cheap [hall sensor](https://nl.aliexpress.com/item/1005002571556707.html) (LLJ8A3-4 (4mm L), 2m line length, NPN NC) that works on 12V. The angle needs to be measured for the ECU.
+
+![sensor in distributor](images/cas_distributor.jpg)
+![sensor in cap](images/cas_cap.jpg)
+
