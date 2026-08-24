@@ -106,15 +106,3 @@ After ordering the parts from the neighbour:
 
 ![Mounted trigger wheel](images/triggerwheel_front.jpg)
 ![Mounted trigger wheel](images/triggerwheel_mounted.jpg)
-
-
-# Cam angle sensor
-
-
-For this I used a basic hall sensor, drilled a hole into the original distributor and glued it in.
-
-The sensor is a cheap [hall sensor](https://nl.aliexpress.com/item/1005002571556707.html) (LLJ8A3-4 (4mm L), 2m line length, NPN NC) that works on 12V. The angle needs to be measured for the ECU.
-
-![sensor in distributor](images/cas_distributor.jpg)
-![sensor in cap](images/cas_cap.jpg)
-
